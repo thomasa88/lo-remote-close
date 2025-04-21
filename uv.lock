@@ -1,0 +1,83 @@
+version = 1
+revision = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "lo-remote-close"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ooo-dev-tools" },
+    { name = "oooenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ooo-dev-tools", specifier = ">=0.53.3" },
+    { name = "oooenv", specifier = ">=0.2.4" },
+]
+
+[[package]]
+name = "ooo-dev-tools"
+version = "0.53.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ooouno" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9f/80/c95bd69f388d7b6d55ae31755e8355f15708987f24a9453ff7b6a6f2d663/ooo_dev_tools-0.53.3.tar.gz", hash = "sha256:4487483c5f4e290f70d8dd2188fa6a11c3e7ac084c7b399f97786890fdaa3c50", size = 2596791 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/7f/2b7bcde41f1e7e5884bbfae023b4f1401aae99d4cf323043ff03e2cc0b90/ooo_dev_tools-0.53.3-py3-none-any.whl", hash = "sha256:cf92c3e625ae7aaf9e84f9b0f88c5ecd39b736a043fbdcd20544e1b43c873944", size = 4262630 },
+]
+
+[[package]]
+name = "oooenv"
+version = "0.2.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/ad/4c46a0792b6d55fe06d5c6d7dcae6484a5f3299fc109761b03a76f3c9072/oooenv-0.2.4.tar.gz", hash = "sha256:ec9c864d6165b87d18dbf008c01cf8e3d941565003799ce5e7e748abc5d57c0f", size = 20722 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7c/7c/7241739f517e95be478e2848c00564237536e9d90ff53055bd7744b82868/oooenv-0.2.4-py3-none-any.whl", hash = "sha256:e17a57661cf12d60f1d1ce5ed1db2aed4e441f0c85f09bc2ac0636d64c5925f3", size = 15251 },
+]
+
+[[package]]
+name = "ooouno"
+version = "3.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "types-unopy" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/97/2e/9d12012eac0973f5c9e27fab8ccc5adc3bdf1714f3e47f5d8b1d891dc362/ooouno-3.0.0.tar.gz", hash = "sha256:e4b4208387bda46c2ba777f9e406fba22d1eb4367d0ec56403f4fc23bb50d580", size = 2225207 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f9/3d/d7f5f71958020e945f5a9c2923fc5d4f473d5ab92af4c61eb09f8014dc45/ooouno-3.0.0-py3-none-any.whl", hash = "sha256:237af5c39c41892e00dacb7d89c18b62025af080c96579bb3c24051f0113fd65", size = 9864269 },
+]
+
+[[package]]
+name = "types-uno-script"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/39/ccbbb2bcd3dd706551f084d60d49cb751935b024c893b8085337b4a9ee2b/types-uno-script-0.1.1.tar.gz", hash = "sha256:0ec3adf5567b289b0e922a3b046593a374206f73a8ed3230a72afc7de5fdb7c2", size = 8828 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8d/21/aca114495b60b70b0143324291f39f67b30ab3776a6fb65c79370194c7db/types_uno_script-0.1.1-py3-none-any.whl", hash = "sha256:092f710bd187825957ec67ee1bd2c8f7094b4d4a728966e70d3870239656407a", size = 9274 },
+]
+
+[[package]]
+name = "types-unopy"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "types-uno-script" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/29/c9/35d81c34d98239178c246cc095f5d62168498be6c51f6020138aa572ea6a/types_unopy-2.0.0.tar.gz", hash = "sha256:b3bacd0cc95d63efd5c8db052d72c7edd4756acbd90761d88ea51cf171f7223d", size = 1445954 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3d/51/0717c18e667d53cff55b30af07ccd00f4bdbce9ab278fcc57724d340f1f3/types_unopy-2.0.0-py3-none-any.whl", hash = "sha256:748673362338851088d7ab88b51132c5f42a4e56600a55c27448b44327b023bf", size = 5200911 },
+]
+
+[[package]]
+name = "typing-extensions"
+version = "4.13.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f6/37/23083fcd6e35492953e8d2aaaa68b860eb422b34627b13f2ce3eb6106061/typing_extensions-4.13.2.tar.gz", hash = "sha256:e6c81219bd689f51865d9e372991c540bda33a0379d5573cddb9a3a23f7caaef", size = 106967 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c", size = 45806 },
+]
