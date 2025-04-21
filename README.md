@@ -2,6 +2,8 @@
 
 This is a small script for closing Libreoffice documents via a shell on Linux. It can be used for closing documents remotely, using SSH.
 
+[OOO Development Tools](https://python-ooo-dev-tools.readthedocs.io/en/latest/index.html) is used to control Libreoffice.
+
 # Example
 
 ```bash
@@ -38,8 +40,11 @@ Closed "calculations.ods".
 
 # Installation
 
-First install the uv package manager: https://github.com/astral-sh/uv?tab=readme-ov-file#installation .
+Clone the repository. 
 
+Install the uv package manager: https://github.com/astral-sh/uv?tab=readme-ov-file#installation .
+
+Get dependencies:
 ```bash
 uv sync
 
