@@ -8,3 +8,6 @@ dependencies = [
     "ooo-dev-tools>=0.53.3",
     "oooenv>=0.2.4",
 ]
+
+[project.scripts]
+lo-remote-close = "lo_remote_close:main"

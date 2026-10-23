@@ -7,9 +7,10 @@ This is a small script for closing Libreoffice documents via a shell on Linux. I
 # Example
 
 ```bash
-# Invoke using uv run lo-remote-close.py or .venv/bin/python3 lo-remote-close.py .
+# Invoke using "uv run lo-remote-close" (if installed with uv),
+# or simply "lo-remote-close" (if installed with pipx)
 
-$ .venv/bin/python3 lo-remote-close.py --help
+$ uv run lo-remote-close --help
 usage: lo-remote-close.py [-h] {list,close} ...
 
 positional arguments:
@@ -20,21 +21,21 @@ positional arguments:
 options:
   -h, --help    show this help message and exit
 
-$ .venv/bin/python3 lo-remote-close.py list
+$ uv run lo-remote-close list
 book.odt
 calculations.ods (Modified)
 User manual.docx (Modified)
 
-$ .venv/bin/python3 lo-remote-close.py close calc
+$ uv run lo-remote-close close calc
 "calculations.ods" is modified. Not closing.
 
 # Save and close
-$ .venv/bin/python3 lo-remote-close.py close -s calc
+$ uv run lo-remote-close close -s calc
 Saved "calculations.ods".
 Closed "calculations.ods".
 
 # Force close
-$ .venv/bin/python3 lo-remote-close.py close -f calc
+$ uv run lo-remote-close close -f calc
 Closed "calculations.ods".
 ```
 
@@ -51,3 +52,9 @@ uv sync
 # Set up symlinks to uno.py files. Fixes the error: "Are you sure that uno has been imported?"
 uv run oooenv cmd-link -a
 ```
+
+Alternatively, install with [pipx](https://pipx.pypa.io/): From the repository root, run
+```bash
+pipx install --system-site-packages .
+```
+Using the `--system-site-packages` option ensures that LibreOffice's modules, such as `uno.py`, are accessible in the resulting virtual environment.
